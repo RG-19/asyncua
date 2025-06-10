@@ -170,6 +170,7 @@ class OpcuaHub:
         self.client: Client = Client(
             url=hub_url,
             timeout=5,
+            application-uri: "urn:br-automation/BR/UA/EmbeddedServer"
         )
         self.client.secure_channel_timeout = 60000  # 1 minute
         self.client.session_timeout = 60000  # 1 minute
